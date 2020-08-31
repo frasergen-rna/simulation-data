@@ -1,13 +1,12 @@
-# simulation-data
-Simulating RNA-Seq reads from the transcripts with or without SNPs
+# Analysis-bias
+Identifying mapping bias
 
-## simulation.pl
-This scripts simulate RNA-Seq reads from the transcripts with or without SNPs
+## bais.r
+This scripts use a binomial distribution test to identify mapping bias
 
 Usage:
-`perl simulation.pl genome.fa homozygote genome.tab.len`
+`Rscript bais.r simulation.base.info.filt output.xls`
 
 Required input are:
-1. Genome fasta file
-2. Information of SNP site
-3. Site of genes, transcripts,exons
+1. The information of parent snp
+
